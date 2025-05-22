@@ -79,4 +79,18 @@ closeErrorBtn.addEventListener("click", function() {
                 errorPopup.style.opacity = "0";
                 errorPopup.style.visibility = "hidden";
 });
+// Close Popup Outside Click
+window.addEventListener("click", function(event) {
+    let successPopup = document.getElementById("successModel");
+    let errorPopup = document.getElementById("errorModel");
+    if (event.target == successPopup) {
+        successPopup.style.opacity = "0";
+        successPopup.style.visibility = "hidden";
+    }
+        if (event.target == errorPopup) {
+                errorPopup.style.opacity = "0";
+                errorPopup.style.visibility = "hidden";
+        }
+}
+);
 
