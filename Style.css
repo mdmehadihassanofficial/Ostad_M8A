@@ -208,7 +208,7 @@ input[type=text] {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.8);
         z-index: 1000;
         opacity: 0;
         visibility: hidden;
