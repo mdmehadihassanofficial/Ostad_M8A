@@ -41,3 +41,42 @@ document.querySelector(".calculate").addEventListener("click" , calculate);
 list.forEach(item =>{
     item.addEventListener("click",showDisplay)
 })
+
+// Popup Js 
+// Popup Buttons
+let successBtn = document.getElementById("success");
+let errorBtn = document.getElementById("error");
+
+// Success Popup Event Listeners
+successBtn.addEventListener("click", function() {
+       let successPopup = document.getElementById("successModel");
+       successPopup.style.opacity = "1";
+       successPopup.style.visibility = "visible";
+});
+
+// Error Popup Event Listeners
+errorBtn.addEventListener("click", function() {
+       let errorPopup = document.getElementById("errorModel");
+       errorPopup.style.opacity = "1";
+       errorPopup.style.visibility = "visible";
+});
+
+// Close Popup Function
+
+let closeSuccessBtn = document.getElementById("closeSuccessBtn");
+let closeErrorBtn = document.getElementById("closeErrorBtn");
+
+//  Success Popup Close Event Listeners      
+closeSuccessBtn.addEventListener("click", function() {
+                let successPopup = document.getElementById("successModel");
+                successPopup.style.opacity = "0";
+                successPopup.style.visibility = "hidden";
+});
+
+// Error Popup Close Event Listeners
+closeErrorBtn.addEventListener("click", function() {
+                let errorPopup = document.getElementById("errorModel");
+                errorPopup.style.opacity = "0";
+                errorPopup.style.visibility = "hidden";
+});
+
