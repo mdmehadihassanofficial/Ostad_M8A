@@ -199,7 +199,7 @@ input[type=text] {
   opacity: 50%;
 }
 
-#successModel, #errorModel{
+#successModel, #errorModel{ 
         position: fixed;
         width: 100%;
         height: 100vh;
