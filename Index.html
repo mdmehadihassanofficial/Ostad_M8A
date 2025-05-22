@@ -9,80 +9,134 @@
 </head>
 
 <body>
-        <div class="calc">
-                <div class="display">
-                        <input type="text" class="inner-display" value="">
+        <!-- Calculator  -->
+        <div class="calculator-design">
+                <div class="calc">
+                        <div class="display">
+                                <input type="text" class="inner-display" value="">
+                        </div>
+                        <div class="keypad">
+                                <table class="keypad-table">
+                                        <tr>
+                                                <td>
+                                                        <div class=" key all-clear">AC</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key clear-list">C</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">%</div>
+                                                </td>
+                                                <td>
+                                                        <div class="key show-display">/</div>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        <div class=" key show-display">1</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">2</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">3</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">*</div>
+                                                </td>
+                                        <tr>
+                                                <td>
+                                                        <div class=" key show-display">4</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">5</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">6</div>
+                                                </td>
+                                                <td>
+                                                        <div class=" key show-display">-</div>
+                                                </td>
+                                        </tr>
+                                        <td>
+                                                <div class=" key show-display">7</div>
+                                        </td>
+                                        <td>
+                                                <div class=" key show-display">8</div>
+                                        </td>
+                                        <td>
+                                                <div class=" key show-display">9</div>
+                                        </td>
+                                        <td>
+                                                <div class=" key show-display">+</div>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                                <td colspan="2">
+                                                        <div class="key show-display" style="width: 190px;">0</div>
+                                                </td>
+                                                <td>
+                                                        <div class="key show-display">.</div>
+                                                </td>
+                                                <td>
+                                                        <div class="key calculate">=</div>
+                                                </td>
+                                        </tr>
+                                </table>
+                        </div>
                 </div>
-                <div class="keypad">
-                        <table class="keypad-table">
-                                <tr>
-                                        <td>
-                                                <div class=" key all-clear">AC</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key clear-list">C</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">%</div>
-                                        </td>
-                                        <td>
-                                                <div class="key show-display">/</div>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <div class=" key show-display">1</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">2</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">3</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">*</div>
-                                        </td>
-                                <tr>
-                                        <td>
-                                                <div class=" key show-display">4</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">5</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">6</div>
-                                        </td>
-                                        <td>
-                                                <div class=" key show-display">-</div>
-                                        </td>
-                                </tr>
-                                <td>
-                                        <div class=" key show-display">7</div>
-                                </td>
-                                <td>
-                                        <div class=" key show-display">8</div>
-                                </td>
-                                <td>
-                                        <div class=" key show-display">9</div>
-                                </td>
-                                <td>
-                                        <div class=" key show-display">+</div>
-                                </td>
-                                </tr>
-                                <tr>
-                                        <td colspan="2">
-                                                <div class="key show-display" style="width: 190px;">0</div>
-                                        </td>
-                                        <td>
-                                                <div class="key show-display">.</div>
-                                        </td>
-                                        <td>
-                                                <div class="key calculate">=</div>
-                                        </td>
-                                </tr>
-                        </table>
+                <div class="btn-group">
+                        <button class="success" id="success">Success Popup</button>
+                        <button class="error" id="error">Error Popup</button>
                 </div>
         </div>
+
+        <!-- End Calculator -->
+        <!-- Start Model -->
+        <div class="model-open">
+                <div id="successModel">
+                        <div class="container container1">
+                                <div class="icon-place icon1"></div>
+                                <div class="title title1">
+                                        <h2>Woohoo, Success</h2>
+                                </div>
+                                <div class="text-place text1">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam
+                                                quasi
+                                                assumenda
+                                                quos doloribus natus consectetur? Fugiat officiis veniam dicta quae ea.
+                                                Neque,
+                                                aliquam
+                                                dicta enim quasi voluptate repellat obcaecati!</p>
+                                </div>
+                                <div class="btn-place btn1">
+                                        <button>Close window</button>
+                                </div>
+                        </div>
+                </div>
+                <div id="errorModel">
+                        <div class="container container2">
+                                <div class="icon-place icon2"></div>
+                                <div class="title title2">
+                                        <h2>Sorry, Error</h2>
+                                </div>
+                                <div class="text-place text2">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam
+                                                quasi
+                                                assumenda
+                                                quos doloribus natus consectetur? Fugiat officiis veniam dicta quae ea.
+                                                Neque,
+                                                aliquam
+                                                dicta enim quasi voluptate repellat obcaecati!
+                                        </p>
+                                </div>
+                                <div class="btn-place btn2">
+                                        <button>Close window</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- End Model -->
         <script src="calculator.js"></script>
 </body>
 
